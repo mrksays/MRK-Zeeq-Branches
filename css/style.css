@@ -1,0 +1,78 @@
+.branch-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px; /* Adjust the gap as needed */
+    margin-bottom: 20px;
+}
+
+.branch {
+    flex: 0 0 calc(25% - 20px); /* Adjust the gap to achieve a 4-column grid */
+    box-sizing: border-box;
+    width: calc(25% - 20px);
+    border: 1px solid #2a3251; /* Add a border for better visualization */
+    padding: 15px;
+    border-radius: 20px;
+}
+.branch h2{
+    padding: 15px 0;
+    font-size: 16px;
+    color: #2a3251;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.branch p{
+    font-size: 14px;
+    color: #ababab;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-bottom: 15px;
+}
+.branch img{
+    width: 100%;
+    border-radius: 20px;
+}
+a.branch-btn {
+    background-color: #e95455;
+    color: #fff;
+    padding: 9px 16px;
+    border-radius: 30px;
+    margin-top: 25px;
+}
+a.branch-btn:hover {
+    background-color: #fff;
+    color: #e95455;
+    border: 1px solid #e95455;
+}
+.filter-main {
+    display: flex;
+    justify-content: end;
+}
+.filter-main form{
+    border: 1px solid #2a3251;
+    border-radius: 30px;
+    width: 20%;
+
+}
+.filter-main form select{
+    border: 1px solid #2a3251;
+    border-radius: 30px;
+}
+@media(max-width:1100px){
+    .branch {
+        flex: 1 1 calc(33% - 20px); /* Adjust the width and gap to achieve a 3-column grid */
+    }
+}
+@media(max-width:1000px){
+    .branch {
+        flex: 1 1 calc(50% - 20px); /* Adjust the width and gap to achieve a 2-column grid */
+    }
+}
+@media(max-width:600px){
+    .branch {
+        flex: 1 1 calc(100% - 20px); /* Adjust the width and gap to achieve a 1-column grid */
+    }
+	.filter-main form{
+    	width: 50%;
+	}
+}
